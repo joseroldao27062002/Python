@@ -1,0 +1,21 @@
+column = int(input())
+operation = input()
+array = []
+
+for i in range(12):
+    array.append([0]*12)
+
+for j in range(12):
+    for k in range(12):
+        number = float(input())
+        array[j][k] = number
+
+soma = 0
+for l in range(12):
+    soma += array[l][column]
+
+if operation == 'S':
+    print('{:.1f}'.format(soma))
+elif operation == 'M':
+     print('{:.1f}'.format(soma / 12)))
+
